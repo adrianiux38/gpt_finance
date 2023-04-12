@@ -20,7 +20,7 @@ def calculate_rsi(prices, period=14):
     return rsi
 
 # Leer el archivo CSV
-data = pd.read_csv("bitcoin_prices.csv")
+data = pd.read_csv("bitcoin_prices2.csv")
 
 # Convertir la columna "Price" a números decimales
 data["Price"] = data["Price"].str.replace(",", "").astype(float)
